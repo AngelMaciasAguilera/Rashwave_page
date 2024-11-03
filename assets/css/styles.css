@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+
+
+:root {
+    --blue: #57A7B3;
+}
+
+/*-----------------------------------HERO SECTION-----------------------------------*/
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 1% 5% 5% 5%;
+    /* top right bottom left */
+}
+
+header {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    padding-left: clamp(0.9rem, 0.2rem + 2.333vw, 3rem);
+    padding-right: clamp(0.9rem, 0.2rem + 2.333vw, 3rem);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burguer {
+    height: 30px;
+    flex: 0 0 30px;
+    display: none;
+    background-image: url(../imgs/burguer.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+
+}
+
+.minilogo {
+    height: 55px;
+    flex: 0 0 125px;
+    background-image: url(../imgs/logo.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero_section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: clamp(1rem, -2.667rem + 12.222vw, 12rem);
+}
+
+.surfing_picture {
+    background-image: url(../imgs/kitesurf_hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar_header {
+    height: 8%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar_header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar_header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.navbar_header ul li a:hover {
+    color: var(--blue);
+}
+
+.content_hero {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: clamp(1rem, -0.333rem + 4.444vw, 5rem);
+}
+
+.left_herosection_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left_herosection_content span {
+    font-family: "Righteous";
+}
+
+.left_herosection_content h1 {
+    font-size: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    color: #434242;
+    font-family: "Righteous";
+    font-weight: 100;
+}
+
+.big_logo {
+    font-size: clamp(3rem, 0rem + 5vw, 6rem);
+    color: #434242;
+    text-transform: uppercase;
+    font-family: "Righteous";
+    font-weight: 100;
+}
+
+
+.word-blue {
+    color: var(--blue);
+}
+
+.hero_button {
+    height: auto;
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    padding: 1.2rem 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: clamp(0.9rem, 0.833rem + 0.222vw, 1.1rem);
+}
+
+.hero_button:hover {
+    background-color: var(--blue);
+}
+
+.surfing_picture {
+    flex: 1;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/kitesurf_hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*--------------------------------------------------ABOUT US ------------------------------------------------------------------*/
+
+.about-us {
+    width: 100%;
+}
+
+.about-us article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-us-left,
+.about-us-right {
+    flex: 1;
+}
+
+.about-us-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-text {
+    margin-bottom: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+}
+
+.about-text p{
+    line-height: 1.6;
+}
+
+.about-text h1 {
+    font-size: clamp(1.5rem, 0.667rem + 1.111vw, 2rem);
+    font-family: "Righteous";
+    text-align: center;
+    color: #434242;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: clamp(0.9rem, 0.833rem + 0.222vw, 1.1rem);
+    line-height: clamp(0.9rem, 0.667rem + 0.778vw, 1.6rem);
+    color: black;
+}
+
+.about-picture {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../imgs/surfing_about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.about-us-right .about-picture2 {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background-image: url('../imgs/surfing_about2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+
+
+
+
+/*--------------------------------------------------OUR COMPROMISE ------------------------------------------------------------------*/
+
+.our-compromise {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.compromise-txt,
+.our-compromise-pic {
+    flex: 1;
+}
+
+.our-compromise-pic {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url('../imgs/surfing_compromise.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+
+.compromise-txt h1 {
+    font-size: clamp(1.5rem, 0.667rem + 1.111vw, 2rem);
+    font-family: "Righteous";
+    text-align: center;
+    color: #434242;
+    margin-bottom: 1rem;
+}
+
+.compromise-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+/*--------------------------------------------------RASHWAVE PRODUCTS------------------------------------------------------------------*/
+
+.products-section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    margin-bottom: clamp(1rem, 0rem + 3.333vw, 4rem);
+}
+
+.products-section h1 {
+    font-size: 2rem;
+    font-family: "Righteous";
+    text-transform: capitalize;
+    text-align: center;
+    color: #434242;
+    margin-bottom: 1rem;
+}
+
+.kitesurf-products {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.kitesurf-product {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: #434242 1px solid;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    max-width: 330px;
+    flex: 1 0 280px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.kitesurf-product a {
+    text-decoration: none;
+    background-color: black;
+    padding: 1rem 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.kitesurf-product a:hover {
+    background-color: var(--blue);
+}
+
+
+.kitesurf-product h4 {
+    font-size: 1.3rem;
+    font-family: "Righteous";
+    text-align: center;
+    color: #434242;
+    margin-bottom: 1rem;
+}
+
+.img-kite {
+    width: 100%;
+    aspect-ratio: 16/12;
+    background-image: url('../imgs/kite.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-kite2 {
+    width: 100%;
+    aspect-ratio: 16/12;
+    background-image: url('../imgs/kite3.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-kite3 {
+    width: 100%;
+    aspect-ratio: 16/12;
+    background-image: url('../imgs/kite4.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-kite4 {
+    width: 100%;
+    aspect-ratio: 16/12;
+    background-image: url('../imgs/kite5.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*--------------------------------------------------NEWS------------------------------------------------------------------*/
+.news-section {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+
+    margin-bottom: clamp(1rem, 0rem + 3.333vw, 4rem);
+}
+
+
+.kitesurf-news {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex: 1 0 300px;
+    gap: 2rem;
+}
+
+.kitesurf-new {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 2rem;
+    border-radius: 8px;
+    padding-bottom: 2rem;
+    max-width: 400px;
+    flex: 1 0 280px;
+}
+
+
+.kitesurf-new h3{
+    font-size: 1.2rem;
+    text-align: left;
+    color: #434242;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.kitesurf-new p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.kitesurf-new a{
+    text-decoration: none;
+    background-color: black;
+    padding: 1rem 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.kitesurf-new a:hover {
+    background-color: var(--blue);
+}
+
+
+.news-section h1 {
+    font-size: 2rem;
+    font-family: "Righteous";
+    text-transform: capitalize;
+    text-align: left;
+    color: #434242;
+    margin-bottom: 1rem;
+}
+
+
+.img-new1 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url('../imgs/new1.jpg');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-new2 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url('../imgs/new2.jpg');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-new3 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url('../imgs/new3.jpg');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------FOOTER----------------------------------------------------------------*/
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    gap: 2rem;
+    color: white;
+    padding: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+}
+
+.logo-footer,.social_network,.replication_links{
+    flex: 1;
+}
+
+.logo-footer{
+    aspect-ratio: 21/9;
+    background-image: url('../imgs/logo.png');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fa-brands{
+    font-size: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+    width: 40px;
+    height: 40px; 
+}
+
+.social_network{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    gap: 2rem;
+    color: black;
+}
+
+.social_logos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social_logos a{
+    color: black;
+    text-decoration: none;
+}
+
+.social_logos a:hover{
+    color: var(--blue);
+}
+.replication_links{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    gap: 2rem;
+    color: black;
+}
+
+.replication_links ul{
+    list-style: none;
+}
+
+.replication_links a{
+    color: black;
+    text-decoration: none;
+}
+
+.replication_links a:hover{
+    color: var(--blue);
+}
+
+
+
+/*-----------------------------------MEDIA QUERIES-----------------------------------*/
+@media screen and (max-width: 1350px) {
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hero_section {
+        margin-bottom: 10rem;
+    }
+    .kitesurf-news{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kitesurf-new{
+        width: 60%;
+        max-width: none!important;
+        flex: 1!important;
+    }
+
+    .kitesurf-products {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .burguer {
+        display: block;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .navbar_header {
+        display: none;
+    }
+
+    .content_hero {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .left_herosection_content {
+        gap: 2rem;
+    }
+
+    .about-us article {
+        flex-direction: column-reverse;
+
+        align-items: stretch!important;
+    }
+
+    .about-us-right .about-picture2 {
+        height: 500px; 
+        flex: 1;
+        background-image: url(../imgs/kitesurf_juvenil.jpg) !important;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .content_hero{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .left_herosection_content{
+        gap: 2rem;
+    }
+
+    .about-us-right .about-picture2 {
+        aspect-ratio: 2/2.5;
+    }
+
+    .our-compromise {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .kitesurf-new{
+        width: 90%;
+    }
+
+    .social_logos{
+        gap: .8rem;
+    }	
+    .our-compromise p{
+        line-height: 1.6rem;
+    }
+    .about-text p {
+        line-height: 1.6;
+    }
+}

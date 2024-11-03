@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+
+
+:root {
+    --blue: #57A7B3;
+}
+
+/*----------------------------------------HEADER----------------------------------------*/
+main {
+    width: 100%;
+    height: auto;
+    padding: 1% 5% 5% 5%;
+    /* top right bottom left */
+}
+
+header {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burguer {
+    height: 30px;
+    flex: 0 0 30px;
+    display: none;
+    background-image: url(../imgs/burguer.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+
+}
+
+.minilogo {
+    height: 55px;
+    flex: 0 0 125px;
+    background-image: url(../imgs/logo.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar_header {
+    height: 8%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar_header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar_header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.navbar_header ul li a:hover {
+    color: var(--blue);
+}
+
+/*----------------------------------------CONTACT----------------------------------------*/
+.contact_elements{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4rem;
+}
+
+.map_location h1{
+    font-family: "Righteous";
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+}
+.map_location{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subelements-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+.map_location a{
+    color: black;
+    text-decoration: none;
+}
+
+.map_location a:hover{
+    color: var(--blue);
+}
+
+.subelements-contact div{
+    line-height: 1.6;
+}
+
+
+.contact_section {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact_section h1 {
+    color: black;
+    font-size: 2rem;
+    font-family: "Righteous";
+}
+
+.contact_form{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+input[type="text"],input[type="email"]{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+textarea{
+    height: 200px;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    width:100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    resize: none;
+    background-color: transparent;
+    outline: none;
+}
+
+
+input[type="submit"]{
+    border-radius: 8px;
+    color: white;
+    background-color: #41464E;
+    width: 20%;
+    height: 3rem;
+}
+
+
+
+input[type="submit"]:hover {
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+
+
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+    border-bottom: 2px solid var(--blue);
+  }
+
+
+
+
+
+  /*----------------------------------------FOOTER----------------------------------------*/
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    gap: 2rem;
+    color: white;
+    padding: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+}
+
+.logo-footer,.social_network,.replication_links{
+    flex: 1;
+}
+
+.logo-footer{
+    aspect-ratio: 21/9;
+    background-image: url('../imgs/logo.png');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fa-brands{
+    font-size: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+    width: 40px;
+    height: 40px; 
+}
+
+.social_network{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    gap: 2rem;
+    color: black;
+}
+
+.social_logos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social_logos a{
+    color: black;
+    text-decoration: none;
+}
+
+.social_logos a:hover{
+    color: var(--blue);
+}
+.replication_links{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    gap: 2rem;
+    color: black;
+}
+
+.replication_links ul{
+    list-style: none;
+}
+
+.replication_links a{
+    color: black;
+    text-decoration: none;
+}
+
+.replication_links a:hover{
+    color: var(--blue);
+}
+
+
+/*----------------------------------------MEDIA QUERIES----------------------------------------*/
+@media screen and (max-width: 1350px) {
+    input[type="submit"]{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .contact_elements{
+        flex-direction: column-reverse;
+        justify-content: center;
+        aspect-ratio: 16/9;
+    }
+
+    .contact_form{
+        width: 80%;
+    }
+
+    .subelements-contact{
+        margin-top: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .burguer {
+        display: block;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .navbar_header {
+        display: none;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .social_logos{
+        gap: .8rem;
+    }
+
+    .map_location iframe{
+        width: 100%;
+        height: 350px;
+    }
+
+}

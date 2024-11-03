@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+
+
+:root {
+    --blue: #57A7B3;
+}
+
+
+/*----------------------------------------------------presentation Section------------------------------------------------------------------------------*/
+main {
+    width: 100%;
+    height: auto;
+    padding: 1% 5% 5% 5%;
+    /* top right bottom left */
+}
+
+.athletes-presentation {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+header {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.burguer {
+    height: 30px;
+    flex: 0 0 30px;
+    display: none;
+    background-image: url(../imgs/burguer.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+
+}
+
+.minilogo {
+    height: 55px;
+    flex: 0 0 125px;
+    background-image: url(../imgs/logo.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar_header {
+    height: 8%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar_header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar_header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.navbar_header ul li a:hover {
+    color: var(--blue);
+}
+
+.img-presentation{
+    width: 90%;
+    aspect-ratio: 16/8;
+    background-image: url(../imgs/surfing_compromise.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.img-presentation h1 {
+    font-size: clamp(1.5rem, 0.333rem + 2.222vw, 3rem);
+    color: white;
+    font-family: "Righteous";
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/*----------------------------------------------------ATHLETES----------------------------------------------------*/
+.athletes-section{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    align-items: stretch;
+}
+
+.athlete{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+    width: 90%;
+}
+
+.athlete-content{
+    display: flex;
+    flex-flow: row;
+    gap: 2rem;
+    align-items: stretch;
+    width: 100%;
+
+    margin-bottom: 4rem;
+}
+
+.athlete-content h1{
+    font-size: 2rem;
+    color: black;
+    font-family: "Righteous";
+}
+
+
+.pic-izq-ath1{
+    aspect-ratio: 2/3;
+    width: 70%;
+    background-image: url(../imgs/athlete1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.content-txt{
+    display: flex;
+    width: 60%;
+    flex-flow: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.athlete-achievements{
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.athlete-achievements h3{
+    font-size: 2rem;
+    color: black;
+    font-family: "Righteous";
+}
+
+.athlete-achievements ul{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    list-style: none;
+    
+}
+
+.athlete-highlights{
+    display: flex;
+    flex-flow: row;
+    justify-content: stretch;
+    gap: 3rem;
+    width: 100%;
+}
+
+.athlete-highlights-left-ath1{
+    flex:1;
+    aspect-ratio: 2/3;
+    background-image: url(../imgs/highlight1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-right{
+    flex:1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+
+.highlights-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.highlights-content h1{
+    font-size: 2rem;
+    color: black;
+    font-family: "Righteous";
+}
+
+.athlete-highlights-right-up-ath1{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/highlight2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-right-down-ath1{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/highlight3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.pic-izq-ath2{
+    width: 70%;
+    aspect-ratio: 2/3;
+    background-image: url(../imgs/athlete2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-left-ath2{
+    flex:1;
+    aspect-ratio: 2/3;
+    background-image: url(../imgs/highlight4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-right-up-ath2{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/highlight5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-right-down-ath2{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/highlight6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.pic-izq-ath3{
+    width: 70%;
+    aspect-ratio: 2/3;
+    background-image: url(../imgs/athlete3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-left-ath3{
+    flex:1;
+    aspect-ratio: 2/3;
+    background-image: url(../imgs/highlight7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-right-up-ath3{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/highlight8.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.athlete-highlights-right-down-ath3{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../imgs/highlight9.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------------------------FOOTER----------------------------------------------------*/
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    gap: 2rem;
+    color: white;
+    padding: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+}
+
+.logo-footer,.social_network,.replication_links{
+    flex: 1;
+}
+
+.logo-footer{
+    aspect-ratio: 21/9;
+    background-image: url('../imgs/logo.png');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fa-brands{
+    font-size: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+    width: 40px;
+    height: 40px; 
+}
+
+.social_network{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    gap: 2rem;
+    color: black;
+}
+
+.social_logos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social_logos a{
+    color: black;
+    text-decoration: none;
+}
+
+.social_logos a:hover{
+    color: var(--blue);
+}
+.replication_links{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    gap: 2rem;
+    color: black;
+}
+
+.replication_links ul{
+    list-style: none;
+}
+
+.replication_links a{
+    color: black;
+    text-decoration: none;
+}
+
+.replication_links a:hover{
+    color: var(--blue);
+}
+
+
+/*----------------------------------------------------MEDIA QUERIES----------------------------------------------------*/
+@media screen and (max-width: 1350px) {
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+}
+
+
+@media screen and (max-width: 960px) {
+
+
+    .navbar_header{
+        display: none;
+    }
+
+    .burguer {
+        display: block;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .athlete-content{
+        flex-flow: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .pic-izq-ath1, .pic-izq-ath2, .pic-izq-ath3{
+        width: 100%;
+        aspect-ratio: 4/5;
+    }
+
+    .content-txt{
+        width: 100%;
+    }
+
+    .social_logos{
+        gap: .8rem;
+    }	
+    .about-text p{
+        line-height: 1.6;
+    }
+
+    .athlete-highlights{
+        flex-flow: column;
+        gap: 2rem;
+    }
+
+}
